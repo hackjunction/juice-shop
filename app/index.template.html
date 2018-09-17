@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title ng-bind="applicationName"></title>
+    <title>Hackjunction Shop</title>
     <meta name="description" content="An intentionally insecure JavaScript Web Application">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link ng-controller="NavbarController" href="node_modules/bootswatch/slate/bootstrap.min.css" rel="stylesheet" id="theme">
@@ -69,7 +69,7 @@
     <div class="container-fluid" ng-controller="NavbarController">
         <div class="navbar-header">
             <a href="#/"><img class="navbar-brand navbar-logo" src="/public/images/JuiceShop_Logo.png"></a>
-            <a class="navbar-brand" href="#/"><span ng-bind="applicationName"></span> <small ng-bind="version"></small></a>
+            <a class="navbar-brand" href="#/"><span>Hackjunction Shop</span> <small ng-bind="version"></small></a>
             <span class="navbar-brand" ng-show="isLoggedIn()">
                 <i class="fas fa-user-circle fa-lg" uib-tooltip="{{userEmail}}" tooltip-placement="right"></i>
             </span>
@@ -133,7 +133,7 @@
     </div>
 </nav>
 
-<h1 class="hidden" ng-bind="applicationName"></h1><!-- for SEO -->
+<h1 class="hidden">Hackjunction Shop</h1><!-- for SEO -->
 
 <div class="container" ng-controller="ServerStartedNotificationController">
     <div uib-alert ng-show="hackingProgress.autoRestoreMessage" ng-class="'alert alert-warning'" close="closeNotification()">
